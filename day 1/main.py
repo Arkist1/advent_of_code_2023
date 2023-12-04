@@ -53,3 +53,4 @@ res = []
 for x in input:
     res.append(int(part2(x)))
 print(sum(res))
+da
