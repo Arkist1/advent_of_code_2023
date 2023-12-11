@@ -1,4 +1,4 @@
-input = open("input.txt", "r").read()
+input = open("sample_input.txt", "r").read()
 
 print(input)
 
@@ -19,7 +19,7 @@ def parse_cards(cards):
 
 
 def get_score(n):
-    return bool(n) * 2 ** (n - 1) if n > 0 else 0
+    return int(bool(n) * 2 ** (n - 1))
 
 
 def multiple_in(s, m):
@@ -40,7 +40,6 @@ def part_1(i):
             if t in card[0]:
                 cnt += 1
 
-        print(cnt, get_score(cnt))
         res.append(get_score(cnt))
 
     return res
